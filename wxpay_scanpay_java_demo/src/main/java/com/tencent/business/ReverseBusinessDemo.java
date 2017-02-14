@@ -27,7 +27,7 @@ public class ReverseBusinessDemo {
         		//HTTP证书的密码，默认等于MCHID
         		"1410780102"
         		);
-        ReverseReqData reverseReqData=new ReverseReqData("","ke7us2wre");
+        ReverseReqData reverseReqData=new ReverseReqData("","qijlenxnw");
       		String string=WXPay.requestReverseService(reverseReqData);
       		System.out.println(string);
       		ReverseResData refundQueryResData = (ReverseResData) Util.getObjectFromXML(string, ReverseResData.class);

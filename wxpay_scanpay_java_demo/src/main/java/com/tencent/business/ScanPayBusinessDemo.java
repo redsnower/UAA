@@ -32,7 +32,7 @@ public class ScanPayBusinessDemo{
            		//子商户ID，受理模式下必填；
            		"",
            		//HTTP证书在服务器中的路径，用来加载证书用
-           		"C:/cert/apiclient_cert.p12",
+           		"C:/cert/1.p12",
            		//HTTP证书的密码，默认等于MCHID
            		"1410780102"
            		);
@@ -59,13 +59,13 @@ public class ScanPayBusinessDemo{
         //2）从bridge里面拿到数据，构建提交被扫支付API需要的数据对象
         ScanPayReqData scanPayReqData = new ScanPayReqData(
                 //这个是扫码终端设备从用户手机上扫取到的支付授权号，有效期是1分钟
-                "130184461720191423",
+                "130217192384192685",
                 //要支付的商品的描述信息，用户会在支付成功页面里看到这个信息
                 bridge.getBody(),
                 //支付订单里面可以填的附加数据，API会将提交的这个附加数据原样返回
                 bridge.getAttach(),
                 //商户系统内部的订单号,32个字符内可包含字母, 确保在商户系统唯一
-                "002",
+                "0045",
                 //订单总金额，单位为“分”，只能整数
                 1,
                 //商户自己定义的扫码支付终端设备号，方便追溯这笔交易发生在哪台终端设备上
