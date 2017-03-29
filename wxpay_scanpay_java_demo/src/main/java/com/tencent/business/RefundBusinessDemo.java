@@ -41,11 +41,11 @@ public class RefundBusinessDemo {
         //第二步：从bridge里面拿到数据，构建提交被扫支付API需要的数据对象
         RefundReqData refundReqData = new RefundReqData(
                 null,//是微信系统为每一笔支付交易分配的订单号，通过这个订单号可以标识这笔交易，它由支付订单API支付成功时返回的数据里面获取到。建议优先使用
-                "2234",//商户系统内部的订单号,transaction_id 、out_trade_no 二选一，如果同时存在优先级：transaction_id>out_trade_no
+                "66662017031310000004",//商户系统内部的订单号,transaction_id 、out_trade_no 二选一，如果同时存在优先级：transaction_id>out_trade_no
                 bridge.getDeviceInfo(),//微信支付分配的终端设备号，与下单一致
-                "a2348",//商户系统内部的退款单号，商户系统内部唯一，同一退款单号多次请求只退一笔
-                1,//订单总金额，单位为分
-                1,//退款总金额，单位为分,可以做部分退款
+                "12346",//商户系统内部的退款单号，商户系统内部唯一，同一退款单号多次请求只退一笔
+                10,//订单总金额，单位为分
+                10,//退款总金额，单位为分,可以做部分退款
                 bridge.getOpUserID(),//操作员帐号, 默认为商户号
                 bridge.getRefundFeeType()//货币类型，符合ISO 4217标准的三位字母代码，默认为CNY（人民币）
         );

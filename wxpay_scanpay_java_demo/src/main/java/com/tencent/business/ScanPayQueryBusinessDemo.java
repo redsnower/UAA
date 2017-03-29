@@ -32,13 +32,10 @@ public class ScanPayQueryBusinessDemo {
 	           		//HTTP证书的密码，默认等于MCHID
 	           		"1410780102"
 	           		);
- 
-
 	        //--------------------------------------------------------------------
 	        //第二步：准备好提交给API的数据(scanPayReqData)
 	        //--------------------------------------------------------------------
-	        
-	        ScanPayQueryReqData scanPayQueryReqData=new ScanPayQueryReqData(null, "2229") ;
+	        ScanPayQueryReqData scanPayQueryReqData=new ScanPayQueryReqData(null, "f56koj790") ;
 
 	        //--------------------------------------------------------------------
 	        //第三步：准备好一个用来处理各种结果分支的监听器(resultListener)
